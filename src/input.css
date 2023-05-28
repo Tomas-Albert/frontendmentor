@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../assets/fonts/Roboto-Regular.ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("../assets/fonts/Roboto-Bold.ttf");
+	font-weight: 700;
+}
+.swal2-styled.swal2-confirm {
+	background-color: hsl(234, 29%, 20%) !important;
+}
+.swal2-styled.swal2-confirm:focus {
+	box-shadow: 0 0 0 3px hsl(234, 29%, 20%, 0.5) !important;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+	border: 0.25em solid hsl(4, 100%, 67%, 0.3) !important;
+}
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+	background-color: hsl(4, 100%, 67%) !important;
+	z-index: 3;
+}
+
+.swal2-icon.swal2-success {
+	border-color: hsl(4, 100%, 67%) !important;
+}

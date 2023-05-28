@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./dist/output.css" rel="stylesheet" />
+		<title>Document</title>
+	</head>
+	<body class="bg-charcoalGrey min-h-screen flex items-center font-roboto lg:mx-6">
+		<main class="lg:max-w-5xl w-full m-auto bg-white flex lg:flex-row flex-col-reverse lg:p-5 lg:rounded-3xl shadow-md">
+			<div class="lg:mr-14 lg:ml-9 sm:mx-9 mx-6 sm:py-16 py-10 flex flex-col">
+				<h2 class="text-[50px] font-bold">Stay updated!</h2>
+				<p class="mt-5 mb-5">Join 60,000+ product managers receiving monthly updates on:</p>
+				<ul class="space-y-4">
+					<li class="flex items-center">
+						<img class="mr-3" src="./assets/images/icon-list.svg" alt="list-marker" />
+						Product discovery and building what matters
+					</li>
+					<li class="flex items-center">
+						<img class="mr-3" src="./assets/images/icon-list.svg" alt="list-marker" />
+						Measuring to ensure updates are a success
+					</li>
+					<li class="flex items-center">
+						<img class="mr-3" src="./assets/images/icon-list.svg" alt="list-marker" />
+						And much more!
+					</li>
+				</ul>
+				<form action="" class="flex flex-col">
+					<div class="flex justify-between mt-12 font-bold text-xs">
+						<label for="email-input">Email adress</label>
+						<label id="error-email-label" class="text-tomato opacity-0 transition-opacity duration-200" for="email-input">Valid email is required</label>
+					</div>
+					<input id="email-input" placeholder="email@company.com" class="mb-4 mt-2 py-3 px-5 text-sm outline-none border-[1px] border-darkGrey/20 focus:border-darkGrey rounded-md transition-all" type="email" name="email" value="" />
+					<button class="bg-darkGrey outline-none text-white w-full p-4 rounded-md hover:bg-tomato transition-all hover:shadow-xl hover:shadow-tomato/20">Subscribe to monthly newsletter</button>
+				</form>
+			</div>
+			<div>
+				<img class="lg:block hidden w-full h-full" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up" />
+				<img class="lg:hidden block w-full h-full" src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+			</div>
+		</main>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="./main.js"></script>
+</html>
